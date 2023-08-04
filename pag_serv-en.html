@@ -1,0 +1,745 @@
+<html lang="en">
+
+<head>
+    <title>Alwa - Ingeniería Sostenible </title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="">
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/export.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/ais.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/mod.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- menu2 -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPDWGS05ZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SPDWGS05ZS');
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .let_tit_servicios span {
+            margin-top: 10px;
+            font-size: 30px !important;
+        }
+
+        .most_herr {
+            display: none !important;
+        }
+
+        .letra1_servi {
+            font-size: 20px !important;
+        }
+
+        . {
+            min-height: 500px !important;
+            max-height: 520px !important;
+        }
+
+        .cuadro_us2 {
+            min-height: 460px !important;
+            max-height: 460px !important;
+        }
+
+        .mask-letraconsult {
+            min-height: 440px !important;
+        }
+
+        .card-lg {
+            min-height: 450px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .mask-letraconsult {
+                min-height: 440px !important;
+            }
+
+        }
+
+        .testi_ce {
+            font-size: 30px !important;
+            padding: 50px !important;
+        }
+
+        #divvalores img {
+            width: 30vw;
+        }
+
+        @media screen and (max-width: 800px) {
+            .testi_ce {
+                display: block;
+                font-size: 18px !important;
+                padding: 20px !important;
+            }
+
+            #divvalores img {
+                width: 70vw;
+            }
+
+            .slide-2019-4 {
+                background: url(images/cn-01.jpg);
+                background-repeat: no-repeat;
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .caja-servicio {
+                margin-top: 220px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .overlay {
+            position: absolute;
+            top: 0px !important;
+            right: 0px !important;
+            background: rgba(0, 0, 0, 0);
+            transition: opacity 500ms;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            display: block;
+            opacity: 0.8;
+        }
+
+        #popupBody {
+            width: 30%;
+            height: 50vh;
+            padding: 1%;
+            right: 10px !important;
+            top: 10px !important;
+            border-radius: 15px;
+            box-shadow: 0 0 5px #96c238;
+            background: #fff;
+            position: fixed;
+            overflow: none;
+            transition: all 5s ease-in-out;
+            margin: 20% auto;
+        }
+
+        #cerrar {
+            position: absolute;
+            right: 10px;
+            transition: all 200ms;
+            text-decoration: none;
+            color: #96c238;
+        }
+
+        @media screen and (max-width: 800px) {
+            #popupBody {
+                width: 60vw !important;
+                bottom: 21px;
+                margin: 0;
+                top: unset !important;
+            }
+        }
+    </style>
+</head>
+
+<body ontouchstart onload="mostrar_noti()">
+    <div class=" mobile-margins ">
+        <div class="row">
+            <div class=" col-md-12 white p-0 m-0" style="height: 100vh;">
+                <!-- menu -->
+                <div class="row" style="position: relative; min-height: 80px; z-index: 3;">
+                    <div class="topnav" id="myTopnav" style="z-index: 9999;">
+                        <a href="index.html" class="logo_header"
+                            style="height: 60px!important; margin-top: 10px; padding-top: 5px; padding-right: 0px; padding-left: 20px; width: 224px; background-color: transparent;"><img
+                                src="assets/img/logo/logo.png" style="width: 150px;" alt="Sostenible"
+                                title="Sostenible" /></a>
+                        <div class="text-left_menu">
+                            <a href="javascript:void(0);" style="font-size: 30px; text-align: end;    margin-top: 16px;
+                  margin-right: 6px;   padding: 0 !important;
+              " class="icon" onclick="collapseMenu()">&#9776;</a>
+                            <a class="float-right_menu">
+                                <img onclick="redictLanguage()" src=" images/flag-peru.png" height="14" class="pointer"
+                                    style="width: 18px !important;">
+                                <img src="images/flag-usa.png" height="14" class=" pointer"
+                                    style="margin-right: 3px;width: 18px !important;"></a>
+                            <a href="index-en.html#contactos" class="float-right_menu">CONTACT</a>
+                            <a href="pag_proy-en.html" class="float-right_menu">PROJECTS</a>
+                            <a href="pag_serv-en.html" class="active_ais float-right_menu">SERVICES</a>
+                            <a href="pag_us-en.html" class="float-right_menu">ABOUT US</a>
+                            <a href="index-en.html" class="float-right_menu">HOME</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="row white" style="  height: 80vh; overflow: hidden;  z-index: 1;">
+                    <div class=" col-md-12 p-0">
+                        <div class="slide-2019-5 p-1">
+                            <div class="slide2019-c text-left">
+                                <span
+                                    style="border-bottom: 2px solid #96c238; border-radius: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <h2>OUR SERVICES</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" linea-servicio col-md-12 p-0 mt-2">
+                        <div class="row  text-center  pb-2"
+                            style=" vertical-align: middle!important; border-bottom: 1px solid #808080;">
+                            <div class="col-md-1 d-md-block d-sm-none">
+                            </div>
+                            <div class="men_servicios col-md-2  text-center">
+                                <a href="#huellas"><span>Footprint calculation</span> </a>
+                            </div>
+                            <div class="men_servicios col-md-2 text-center">
+                                <a href="#climatico"><span>Climate Change Management</span> </a>
+                            </div>
+                            <div class="men_servicios col-md-2 text-center">
+                                <a href="#eficiencia"><span>Energy Management</span></a>
+                            </div>
+                            <div class="men_servicios col-md-2 text-center">
+                                <a href="#tecnologia"><span>
+                                        Technology and Applications</span></a>
+                            </div>
+                            <div class="men_servicios col-md-2 text-center">
+                                <a href="#conocimiento"><span>Knowledge and communication
+                                    </span></a>
+                            </div>
+                            <div class="col-md-1  d-md-block d-sm-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="huellas" class="row caja-servicio white pb-5 mt-1">
+            <div class="col-md-12 height-md-full mt-1 center text-center">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <center>
+                            <img src="images/huella.png" class="img_servicio"
+                                style=" margin-top: 40px; width: 250px; border-bottom: 1px solid #808080;">
+                        </center>
+                    </div>
+                    <div class="col-md-12 let_tit_servicios">
+                        <span>Carbon Footprint Calculation</span>
+                    </div>
+                    <div class="col-md-12 pt-2">
+                        <div class="row justify-content-center d-flex pt-3">
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- carbon footprint---->
+                                    <div class="col-md-12 p-3"
+                                        style="min-height: 670px; max-height: 700px;  border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span>Carbon Footprint</span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios"
+                                                style="min-height: 400px;">
+                                                <span>• Calculates greenhouse gas (GHG) emissions, expressed in units of
+                                                    CO<sub>2</sub>e mass.<br>
+                                                    • Includes mitigation measures, emissions reduction calculations,
+                                                    economic indicators, and abatement curves.<br>
+                                                    • Includes the proposal of an emissions monitoring plan and
+                                                    mitigation initiatives.<br>
+                                                    • Assists in the registration and recognition process at the
+                                                    Peruvian Carbon Footprint Registry (HC Perú) of the Ministry of the
+                                                    Environment (MINAM).<br>
+                                                    • Certifies service quality and commits to answering third-party
+                                                    inquiries.<br>
+                                                    • Includes a report and infographic.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row center">
+                                            <div class="col-md-12">
+                                                <img src="images/chc.png" align="right"
+                                                    style="width: 180px; margin-right: 0px!important;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- water footprint---->
+                                    <div class="col-md-12 p-3"
+                                        style="min-height: 670px; max-height: 700px; border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span>Water Footprint</span>
+                                            </div>
+                                        </div>
+                                        <div class="row center">
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios"
+                                                style="min-height: 400px;">
+                                                <span>• Calculates total water resource consumption, expressed in volume
+                                                    of freshwater.<br>
+                                                    • Includes measures to reduce water consumption, economic
+                                                    indicators, and abatement curves.<br>
+                                                    • Assists in obtaining the Blue Certificate from the National Water
+                                                    Authority (ANA) (water footprint report and proposed design of
+                                                    reduction and shared value projects).<br>
+                                                    • Certifies service quality and commits to answering third-party
+                                                    inquiries.<br>
+                                                    • Includes a report and infographic.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row center">
+                                            <div class="col-md-12">
+                                                <img src="images/chh.png" align="right"
+                                                    style="width: 180px; margin-right: 0px!important;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center d-flex center pt-0">
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- ecological footprint---->
+                                    <div class="col-md-12 p-3 card-lg"
+                                        style=" border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span>Ecological Footprint</span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios">
+                                                <span>• Calculates the demand for resources taken from the planet,
+                                                    expressed in units of land area.<br>
+                                                    • Includes land calculation per activity: carbon sequestration,
+                                                    livestock, agriculture, fishing, urbanization, forest use, and waste
+                                                    disposal.<br>
+                                                    • Proposes measures to improve resource efficiency.<br>
+                                                    • Includes a report and infographic.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- environmental footprint---->
+                                    <div class="col-md-12 p-3 card-lg"
+                                        style=" border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span>Environmental Footprint</span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios">
+                                                <span>• Life cycle analysis and multi-criteria indicators.<br>
+                                                    • Includes calculation of:<br><span
+                                                        style="font-size: 16px!important; font-style: italic;">
+                                                        &nbsp;&nbsp;&nbsp;> Greenhouse gas emissions.<br>
+                                                        &nbsp;&nbsp;&nbsp;> Water resource consumption.<br>
+                                                        &nbsp;&nbsp;&nbsp;> Local pollutant emissions.<br>
+                                                        &nbsp;&nbsp;&nbsp;> Substances depleting the ozone layer
+                                                        emissions.<br></span>
+                                                    • Includes a report and infographic.
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="climatico" class="row grey-light1 pt-2 pb-5 mt-1">
+            <div class="col-md-12 height-md-full mt-1 center text-center">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <center>
+                            <img src="images/cc.png" class="img_servicio"
+                                style=" margin-top: 40px; width: 250px; border-bottom: 1px solid #808080;">
+                        </center>
+                    </div>
+                    <div class="col-md-12 let_tit_servicios">
+                        <span>Climate Change Management</span>
+                    </div>
+                    <div class="col-md-12 pt-2">
+                        <div class="row justify-content-center d-flex  pt-3">
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- carbon footprint---->
+                                    <div class="col-md-12 p-3"
+                                        style="min-height: 540px; max-height: 660px; border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span></span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios">
+                                                <span>• National Greenhouse Gas Inventories (INGEI)<br>
+                                                    • Mitigation measures, their economic indicators, and abatement
+                                                    curve.<br>
+                                                    • Monitoring and Verification Plans for mitigation initiatives.<br>
+                                                    • Design and development of Nationally Appropriate Mitigation
+                                                    Actions (NAMA) for each country.<br>
+                                                    • Carbon credit generation projects in VCS program and Gold
+                                                    Standard.<br>
+                                                    • Mitigation projects contributing to Nationally Determined
+                                                    Contributions (NDC).</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="eficiencia" class="row white pt-2 pb-5 mt-1">
+            <div class="col-md-12 height-md-full mt-1 center text-center">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <center>
+                            <img src="images/ee.png" class="img_servicio"
+                                style=" margin-top: 40px; width: 250px; border-bottom: 1px solid #808080;">
+                        </center>
+                    </div>
+                    <div class="col-md-12 let_tit_servicios">
+                        <span>Energy Management</span>
+                    </div>
+                    <div class="col-md-12 pt-2">
+                        <div class="row justify-content-center d-flex  pt-3">
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- carbon footprint---->
+                                    <div class="col-md-12 p-3 card-lg"
+                                        style=" border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span></span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios">
+                                                <span>• Energy Baseline<br>
+                                                    • Energy Performance<br>
+                                                    • Identification of energy performance improvement opportunities<br>
+                                                    • Calculation of energy performance and GHG indicators<br>
+                                                    • Gap analysis with ISO 50001 standard<br>
+                                                    • Goals for implementing improvement opportunities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tecnologia" class="row grey-light1 pt-3 pb-5 mt-1">
+            <div class="col-md-12 height-md-full mt-1 center text-center">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <center>
+                            <img src="images/tech.png" class="img_servicio"
+                                style=" margin-top: 40px; width: 250px; border-bottom: 1px solid #808080;">
+                        </center>
+                    </div>
+                    <div class="col-md-12 let_tit_servicios">
+                        <span>Technology and Applications</span>
+                    </div>
+                    <div class="col-md-12 pt-2">
+                        <div class="row justify-content-center pt-3">
+
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- carbon footprint---->
+                                    <div class="col-md-12 p-3 card-lg"
+                                        style=" border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span></span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios">
+                                                <span>We create web applications that accompany each of our
+                                                    services for sustainable development:<br>
+                                                    <ul>
+                                                        <li>• Custom software for Carbon or Water Footprint.</li>
+                                                        <li>• Software to manage mitigation measures.</li>
+
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="conocimiento" class="row white pt-3 pb-5 mt-1">
+            <div class="col-md-12 height-md-full mt-1 center text-center">
+                <div class="row center">
+                    <div class="col-md-12">
+                        <center>
+                            <img src="images/cap.png" class="img_servicio"
+                                style=" margin-top: 40px; width: 250px; border-bottom: 1px solid #808080;">
+                        </center>
+                    </div>
+                    <div class="col-md-12 let_tit_servicios">
+                        <span>Knowledge and Communication</span>
+                    </div>
+                    <div class="col-md-12 pt-2">
+                        <div class="row justify-content-center pt-3">
+
+                            <div class="col-md-8 col-lg-4 p-1">
+                                <div class="row center"> <!--- carbon footprint---->
+                                    <div class="col-md-12 p-3 card-lg"
+                                        style=" border: 1px solid #404040; border-radius: 30px 30px 0px 30px; overflow: hidden;">
+                                        <div class="row center">
+                                            <div class="col-md-12 p-1 text-center let_subtit_servicios">
+                                                <span></span>
+                                            </div>
+                                            <div class="col-md-12 p-3 text-left let_parra_servicios">
+                                                <span>• Climate Change Management Training:<br>
+                                                    <span>&nbsp;&nbsp;&nbsp;> Carbon Footprint<br>
+                                                        &nbsp;&nbsp;&nbsp;> Water Footprint<br>
+                                                        &nbsp;&nbsp;&nbsp;> Ecological Footprint<br>
+                                                        &nbsp;&nbsp;&nbsp;> Environmental Footprint</span><br><br>
+                                                    • Energy Management Workshops<br>
+                                                    <span>&nbsp;&nbsp;&nbsp;> Energy Performance Diagnosis<br>
+                                                        &nbsp;&nbsp;&nbsp;> Energy Efficiency Audit</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!----------------- PIE --------------------------->
+        <iframe src="footer-en.html" width="100%" height="319" style="border: 0 none"></iframe>
+    </div>
+    <div id="ppnoti" style="display: none;" class="overlay">
+        <div id="popupBody">
+            <a id="cerrar" class="s-12"
+                href="javascript:document.getElementById('ppnoti').style.display='none';void0">Close</a>
+            <h2 class="mb-3"> </h2>
+
+            <div class="popupContent s-14 text-green" style="overflow-y: auto; height: 45vh;">
+                <a class="twitter-timeline s-12 color-letra-verde"
+                    href="https://twitter.com/ALWAtweet?ref_src=twsrc%5Etfw">Alwa Publications</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"
+                    class=" text-green s-14"></script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function collapseMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        function redictLanguage() {
+            window.location.href = "pag_serv.html";
+        }
+    </script>
+</body>
+<script>
+    function mostrar_noti() {
+        document.getElementById('ppnoti').style.display = 'block';
+    }
+</script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- Slider-JavaScript -->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+        $("#slider, #slider1").responsiveSlides({
+            auto: true,
+            nav: true,
+            speed: 1500,
+            namespace: "callbacks",
+            pager: false,
+        });
+    });
+</script>
+<!-- //Slider-JavaScript -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<!-- FlexSlider-JavaScript -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!-- //FlexSlider-JavaScript -->
+<!-- about-section-flexisel-slider-->
+<script type="text/javascript">
+    $(window).load(function () {
+        $("#flexiselDemo1").flexisel({
+            visibleItems: 3,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 640,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 768,
+                    visibleItems: 2
+                }
+            }
+        });
+
+    });
+</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<!-- //about-section-flexisel-slider-->
+<!-- Gallery-script -->
+<script src="js/simpleLightbox.js"></script>
+<script>
+    $('.w3_agile_gallery_grid a').simpleLightbox();
+</script>
+<!-- //Gallery-script -->
+<!--<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //Bootstrap -->
+
+<!-- nueva script -->
+<!-- jarallax -->
+<script src="js/SmoothScroll.min.js"></script>
+<script src="js/jarallax.js"></script>
+<script type="text/javascript">
+    /* init Jarallax */
+    $('.jarallax').jarallax({
+        speed: 0.5,
+        imgWidth: 1366,
+        imgHeight: 768
+    })
+</script>
+<!-- //jarallax -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear' 
+        };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+<!-- nueva script -->
+<!-- General Components and Settings -->
+<script type="text/javascript" src="js/global.min.js"></script>
+<script type="text/javascript" src="js/components/header-sticky.min.js"></script>
+<script type="text/javascript" src="js/components/scrollbar.min.js"></script>
+<script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/components/swiper.min.js"></script>
+<script type="text/javascript" src="js/components/counter.min.js"></script>
+<script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
+<script type="text/javascript" src="js/components/parallax.min.js"></script>
+<script type="text/javascript" src="js/components/google-map.min.js"></script>
+<script type="text/javascript" src="js/components/wow.min.js"></script>
+<!-- menu2 -->
+
+<script>
+    function showdiv(myobtvis, mybtnvis) {
+        document.getElementById("divmision").style.display = "none";
+        document.getElementById("divvision").style.display = "none";
+        document.getElementById("divvalores").style.display = "none";
+        document.getElementById("btndivmision").style.background = "#96c238";
+        document.getElementById("btndivvision").style.background = "#96c238";
+        document.getElementById("btndivvalores").style.background = "#96c238";
+        document.getElementById(mybtnvis).style.background = "#607C29";
+        /*document.getElementById("btndivvision").style.background-color= "#9c9c9c";
+        document.getElementById("btndivvalores").style.background-color= "#9c9c9c";
+        /*document.getElementById(mybtnvis).style.background-color= "#ffffff";*/
+        document.getElementById(myobtvis).style.display = "block";
+    }
+</script>
+<!-- menu2 -->
+
+</html>

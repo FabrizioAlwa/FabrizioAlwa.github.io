@@ -1,0 +1,1301 @@
+<html lang="en">
+
+<head>
+    <title>Alwa - Ingeniería Sostenible </title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="">
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/export.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/ais.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/mod.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPDWGS05ZS"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SPDWGS05ZS');
+    </script>
+
+    <style>
+        @media screen and (max-width: 800px) {
+            .slide-2019-6 {
+                background: url(images/cp-01.jpg);
+                background-repeat: no-repeat;
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+        /* timeline*/
+        .intro {
+            background: #ffffff;
+            padding: 100px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .timeline ul {
+            background: #ffffff;
+            padding: 50px 0;
+        }
+
+        .timeline ul li {
+            list-style-type: none;
+            position: relative;
+            width: 8px;
+            margin: 0 auto;
+            padding-top: 50px;
+            background: rgb(117 191 66);
+            z-index: 4;
+        }
+
+        .timeline ul li.in-view>div.hoja-right::after {
+            content: '';
+            position: absolute;
+            left: -54px;
+            bottom: -15px;
+            transform: translateX(-11%);
+            width: 80px;
+            height: 14px;
+            background: inherit;
+            background-color: black;
+            color: white;
+            transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            -webkit-transform: rotate(317deg);
+            border-top-left-radius: 12px;
+        }
+
+        .timeline ul li.in-view>div.hoja-left::after {
+            content: '';
+            position: absolute;
+            right: -54px;
+            bottom: -15px;
+            transform: translateX(-11%);
+            width: 80px;
+            height: 14px;
+            background: inherit;
+            background-color: black;
+            color: white;
+            transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            -webkit-transform: rotate(215deg);
+            border-radius: 0;
+            border-bottom-left-radius: 12px;
+        }
+
+
+        .timeline ul li div {
+            position: relative;
+            bottom: 0;
+            width: 400px;
+            padding: 10px;
+            color: #ffffff;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .caja_verde,
+        .timeline ul li.in-view:has(div.caja_verde)>div.hoja-left::after,
+        .timeline ul li.in-view:has(div.caja_verde)>div.hoja-right::after {
+            background: #75bf42 !important;
+        }
+
+        .caja_verde_oscuro,
+        .timeline ul li.in-view:has(div.caja_verde_oscuro)>div.hoja-left::after,
+        .timeline ul li.in-view:has(div.caja_verde_oscuro)>div.hoja-right::after {
+            background: #3ab549 !important;
+        }
+
+        .caja_celeste,
+        .timeline ul li.in-view:has(div.caja_celeste)>div.hoja-left::after,
+        .timeline ul li.in-view:has(div.caja_celeste)>div.hoja-right::after {
+            background: rgb(97, 200, 230) !important;
+        }
+
+        .caja_celeste_oscuro,
+        .timeline ul li.in-view:has(div.caja_celeste_oscuro)>div.hoja-left::after,
+        .timeline ul li.in-view:has(div.caja_celeste_oscuro)>div.hoja-right::after {
+            background: rgb(0, 117, 160) !important;
+        }
+
+        .caja_naranja,
+        .timeline ul li.in-view:has(div.caja_naranja)>div.hoja-left::after,
+        .timeline ul li.in-view:has(div.caja_naranja)>div.hoja-right::after {
+            background: rgb(230, 158, 25) !important;
+        }
+
+        .caja_verde_negro,
+        .timeline ul li.in-view:has(div.caja_verde_negro)>div.hoja-left::after,
+        .timeline ul li.in-view:has(div.caja_verde_negro)>div.hoja-right::after {
+            background: rgb(16, 46, 31) !important;
+        }
+
+        .timeline ul li div::before {
+            content: '';
+            position: absolute;
+            bottom: 7px;
+            width: 0;
+            height: 0;
+            border-style: none;
+        }
+
+        .timeline ul li:nth-child(odd) div {
+            left: 45px;
+        }
+
+        .timeline ul li:nth-child(odd) div::before {
+            left: -15px;
+            border-width: 0px 0px 0px 0;
+            border-color: transparent #607C29 transparent transparent;
+
+        }
+
+        .timeline ul li:nth-child(even) div {
+            left: -439px;
+        }
+
+        .timeline ul li:nth-child(even) div::before {
+            right: -15px;
+            border-width: 0px 0 0px 0px;
+            border-color: transparent transparent transparent #607C29;
+        }
+
+        time {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 100;
+            margin-bottom: 1px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+
+        /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .timeline ul li.in-view::after {
+            background: rgba(237, 125, 49, 1);
+        }
+
+        /* Tiempo en aparecer los divs */
+        .timeline ul li div {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .timeline ul li.in-view div {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+            z-index: 20;
+        }
+
+        .timeline ul li.in-view div section {
+            height: 90px;
+            width: 90px;
+            background: rgb(211, 211, 211) !important;
+            border: 2px solid white;
+            background: linear-gradient(90deg, rgba(211, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 44%, rgba(255, 255, 255, 1) 100%) !important;
+            border-radius: 50%;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .timeline ul li.in-view div section img {
+            filter: brightness(64%) grayscale(100%);
+        }
+
+
+        /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        @media screen and (max-width: 800px) {
+            .timeline ul li div {
+                width: 250px;
+            }
+
+            .timeline ul li:nth-child(even) div {
+                left: -289px;
+                /*250+45-6*/
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline ul li {
+                margin-left: 20px;
+            }
+
+            .timeline ul li div {
+                width: calc(100vw - 91px);
+            }
+
+            .timeline ul li:nth-child(even) div {
+                left: 45px;
+            }
+
+            .timeline ul li:nth-child(even) div::before {
+                left: -15px;
+                border-width: 8px 16px 8px 0;
+                border-color: transparent #607C29 transparent transparent;
+            }
+        }
+    </style>
+    <!-- menu2 -->
+    <!-- noticias -->
+    <style type="text/css">
+        .overlay {
+            position: absolute;
+            top: 0px !important;
+            right: 0px !important;
+            background: rgba(0, 0, 0, 0);
+            transition: opacity 500ms;
+            display: block;
+            opacity: 0.9;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            display: block;
+            opacity: 0.8;
+        }
+
+        #popupBody {
+            width: 30%;
+            height: 50vh;
+            padding: 1%;
+            right: 10px !important;
+            top: 10px !important;
+            border-radius: 15px;
+            box-shadow: 0 0 5px #96c238;
+            background: #fff;
+            position: fixed;
+            overflow: none;
+            transition: all 5s ease-in-out;
+            margin: 20% auto;
+        }
+
+        #cerrar {
+            position: absolute;
+            right: 10px;
+            transition: all 200ms;
+            text-decoration: none;
+            color: #96c238;
+        }
+
+        .hr-time {
+            border: 1px solid white;
+            margin: 5px;
+        }
+
+        .hoja-right {
+            border-top-left-radius: 56px !important;
+            border-bottom-right-radius: 56px !important
+        }
+
+        .hoja-left {
+            border-top-right-radius: 56px !important;
+            border-bottom-left-radius: 56px !important
+        }
+
+        .title-proyects {
+            color: black;
+        }
+
+        @media screen and (max-width: 600px) {
+            .hoja-left {
+                border-radius: 0 !important;
+                border-top-left-radius: 56px !important;
+                border-bottom-right-radius: 56px !important
+            }
+
+            /* .timeline ul li.in-view:has(div.hoja-left)::after */
+
+            .timeline ul li.in-view>div.hoja-left::after {
+                left: -56px;
+                -webkit-transform: rotate(317deg);
+                border-radius: 0;
+                border-top-left-radius: 12px;
+            }
+
+            .title-proyects {
+                font-size: 29px;
+            }
+
+        }
+
+        .last_time_lines {
+            bottom: 25px;
+            height: 297px;
+        }
+
+        .first_time_line {
+            padding-top: 19px !important;
+        }
+
+       .caja-servicio {
+        margin-top: 143px !important;
+        }
+
+        .intro{
+         margin: 10px
+    
+        }
+    </style>
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+</head>
+
+<body>
+    <!--  <div class=" mobile-margins "> -->
+    <div class="row  ">
+        <div class=" col-md-12 white p-0 m-0 " style="height: 70vh;">
+            <!-- menu -->
+            <div class="row" style="position: relative; min-height: 80px; z-index: 3;">
+                <div class="topnav" id="myTopnav" style="z-index: 9999;">
+                    <a href="index.html" class="logo_header"
+                        style="height: 60px!important; margin-top: 10px; padding-top: 5px; padding-right: 0px; padding-left: 20px; width: 224px; background-color: transparent;"><img
+                            src="assets/img/logo/logo.png" style="width: 150px;" alt="Sostenible"
+                            title="Sostenible" /></a>
+                    <div class="text-left_menu">
+                        <a href="javascript:void(0);" style="font-size: 30px; text-align: end;    margin-top: 16px;
+        margin-right: 6px;   padding: 0 !important;
+    " class="icon" onclick="collapseMenu()">&#9776;</a>
+                        <a class="float-right_menu">
+                            <img onclick="redictLanguage()" src=" images/flag-peru.png" height="14" class="pointer"
+                                style="width: 18px !important;">
+                            <img src="images/flag-usa.png" height="14" class=" pointer"
+                                style="margin-right: 3px;width: 18px !important;"></a>
+                        <a href="index-en.html#contactos" class="float-right_menu">CONTACT</a>
+                        <a href="pag_proy-en.html" class="active_ais  float-right_menu">PROJECTS</a>
+                        <a href="pag_serv-en.html" class="float-right_menu">SERVICES</a>
+                        <a href="pag_us-en.html" class="float-right_menu">ABOUT US</a>
+                        <a href="index-en.html" class="float-right_menu">HOME</a>
+                    </div>
+                </div>
+            </div>
+            <!-- slide -->
+            <div class="row white" style="  height: 90vh!important; overflow: hidden;  z-index: 1; ">
+                <div class=" col-md-12 p-0">
+                    <div class="slide-2019-6 p-1 ">
+                        <div class="slide2019-c text-left">
+                            <span
+                                style="border-bottom: 2px solid #96c238; border-radius: 2px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <h2>
+                                OUR PROJECTS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="proyectos" class="row caja-servicio white pb-0 mt-0">
+        <div class="col-md-12 p-0 m-0 center text-center white"><!------ ------>
+            <div class="row white height_full">
+                <div class="col-md-12 white" style="border: 0px;">
+                    <section class="intro p-0 white">
+                        <div class="container ">
+                            <h1 class="title-proyects">Our main projects</h1>
+                        </div>
+                    </section>
+                    <section class="timeline">
+                        <ul>
+                            <li class="first_time_line">
+                                <div class="caja_naranja hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">UNACEM</label>
+                                    <hr class="hr-time">
+                                    <time>Product Carbon Footprint Calculation, review of the "Cement CO2 and Energy
+                                        Protocol, Version 3.1, CO2 Emissions and Energy Inventory" spreadsheet<br>
+                                    </time> <label style="font-size: 18px;">2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 60px; " src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM (via GGGI)</label>
+                                    <hr class="hr-time">
+                                    <time>National GHG Inventories for 4 regions of Peru<br>
+                                    </time> <label>2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">MINAM (via
+                                        GIZ)</label>
+                                    <hr class="hr-time">
+                                    <time>Update of HC-Peru application<br>
+                                    </time> <label style="font-size: 18px;">2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-left text-center">
+                                    <section> <img style="width: 60px; " src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Anglo American Quellaveco SA (via
+                                        Knight Piesold SA)</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon and Water Footprints, Energy Efficiency, and Software Development for
+                                        Quellaveco project<br>
+                                    </time> <label>2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-right text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/cap.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">IDGEI 2020</label>
+                                    <hr class="hr-time">
+                                    <time>Miraflores District Municipality<br>
+                                    </time> <label style="font-size: 18px;">2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-left text-center">
+                                    <section> <img style="width: 60px; " src="images/cap.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">SEDAPAL</label>
+                                    <hr class="hr-time">
+                                    <time>Review, organization, and adaptation of carbon footprints<br>
+                                    </time> <label>2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">Open Plaza
+                                        S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon and Water Footprint Calculation 2020<br>
+                                    </time> <label style="font-size: 18px;">2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Disal S.A.C.</label>
+                                    <hr class="hr-time">
+                                    <time>Disal S.A.C.: Corporate Carbon Footprint Calculation 2020<br>
+                                    </time><label>2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">GRUPO REI (Red
+                                        Eléctrica Internacional)</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2019<br>
+                                    </time> <label style="font-size: 18px;">2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Red de Energía del Perú S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon Footprint Calculation 2020 and Verification 2019<br>
+                                    </time><label>2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">Sodimac -
+                                        Maestro</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2020<br>
+                                    </time> <label style="font-size: 18px;">2021</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Municipalidad Metropolitana de
+                                        Lima</label>
+                                    <hr class="hr-time">
+                                    <time>Calculation of Carbon and Water Footprint 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">Corporación Peruana de
+                                        Productos Químicos S.A. (QROMA)</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon and Water Footprint Calculation 2019<br>
+                                    </time> <label style="font-size: 18px;">2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">SIMA Callao</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-right text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/cap.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">MINAM (Via
+                                        PNUD)</label>
+                                    <hr class="hr-time">
+                                    <time>Support for the implementation process of NDCs in Peru<br>
+                                    </time> <label style="font-size: 18px;">2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Disal S.A.C.</label>
+                                    <hr class="hr-time">
+                                    <time>Disal S.A.C.: Corporate Carbon Footprint Calculation 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">Corporación Aceros
+                                        Arequipa S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2019<br>
+                                    </time> <label style="font-size: 18px;">2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Sodimac - Maestro</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px; font-weight:500;">Open Plaza
+                                        S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon and Water Footprint Calculation<br>
+                                    </time> <label style="font-size: 18px;">2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Empresa Minera Quenuales S.A. y Perubar
+                                        S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-right text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Red de Energía del Perú S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon Footprint Calculation 2019 and Verification 2018<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Red de Energía del Perú S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Water Footprint Calculation 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Interconexión Eléctrica Isa Perú
+                                        S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon Footprint Calculation 2019 and 2020<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Consorcio Transmantaro S.A</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon Footprint Calculation 2019 and 2020<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Interconexión Eléctrica Isa Perú
+                                        S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2019<br>
+                                    </time><label>2020</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 60px; " src="images/cap.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">CPSAA</label>
+                                    <hr class="hr-time">
+                                    <time>Country Consulting and Information Evaluation and Collection Tool (HENRI)<br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Municipality and District of San
+                                        Isidro</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon and Water Footprint Calculation for the years 2016 and 2017<br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Compañía Minera Antapaccay S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint Calculation 2018
+                                        <br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Red de Energía del Perú S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint REP 2018-2019 and support in the verification of
+                                        carbon footprint from 2016 to 2018.
+                                        <br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Consorcio Transmantaro S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Measurement of Corporate Carbon Footprint ISAP 2018-2019
+                                        <br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Interconexión Eléctrica Isa Perú
+                                        S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Measurement of Corporate Carbon Footprint ISAP 2018-2019
+                                        <br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Cargo Transport</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint 2018
+                                        <br>
+                                    </time><label>2019</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">REDSUR</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint 2018
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Consorcio Transmantaro S.A.</label>
+                                    <hr class="hr-time">
+                                    <time>Blue Certificate 2018 for RED
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-right text-center">
+                                    <section> <img style="width: 60px;" src="images/cap.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM</label>
+                                    <hr class="hr-time">
+                                    <time>Capacity-building workshop for the use of HCPerú
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-left text-center">
+                                    <section> <img style="width: 60px; " src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM (via UNDP)</label>
+                                    <hr class="hr-time">
+                                    <time>HCPerú Web Application
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Cementos Pacasmayo<br>(via Bureau
+                                        Veritas Perú)</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon and Water Footprint 2017
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-left text-center">
+                                    <section> <img style="width: 70px; " src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Cementos Selva<br>(via Bureau Veritas
+                                        Perú)</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon and Water Footprint 2017
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-right text-center">
+                                    <section> <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Tigre Perú</label>
+                                    <hr class="hr-time">
+                                    <time>Blue Certificate 2017
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste_oscuro hoja-left text-center">
+                                    <section> <img style="width: 60px; " src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM (via GIZ)</label>
+                                    <hr class="hr-time">
+                                    <time>Toolkit for calculating GHG and CC emissions in the transportation sector
+                                        <br>
+                                    </time><label>2018</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_naranja hoja-right text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/ee.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">TGP (via Knight Piésold Consultores
+                                        S.A.)</label>
+                                    <hr class="hr-time">
+                                    <time>Energy Efficiency<br>2018</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">REA</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint 2017<br>2018</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Claro Perú</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate Carbon Footprint 2017<br>2018</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-left text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/cc.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">
+                                        Asesorías Algoritmos del Perú S.A.C.
+                                    </label>
+                                    <hr class="hr-time">
+                                    <time> Inventory of stores in 6 cities in Peru 2016-2018</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">RED - ISA RED</label>
+                                    <hr class="hr-time">
+                                    <time>
+                                        Verification of carbon footprints 2017 and 2018<br>2018</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-left text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Corporate carbon footprints 2016 -
+                                        2018</label>
+                                    <hr class="hr-time">
+                                    <time>Atento del Perú S.A.C.<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">RED - ISA RED</label>
+                                    <hr class="hr-time">
+                                    <time>Corporate carbon footprint 2016<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_naranja hoja-left text-center">
+                                    <section>
+                                        <img style="width: 55px;" src="images/ee.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINEM (Via OLADE)</label>
+                                    <hr class="hr-time">
+                                    <time> Strengthening the MRV proposal for energy audits in the public
+                                        sector<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste_oscuro hoja-right text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM (Via NEFCO)</label>
+                                    <hr class="hr-time">
+                                    <time> Web application SIGERSOL MUNICIPAL<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-left text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/cc.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MTC (Via GIZ)</label>
+                                    <hr class="hr-time">
+                                    <time>MRV for NAMA TransPeru<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Aquafondo</label>
+                                    <hr class="hr-time">
+                                    <time> Water footprint and water consumption reduction proposals<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_oscuro hoja-left text-center">
+                                    <section>
+                                        <img style="width: 55px;" src="images/cap.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Green Energy Perú S.A.C.</label>
+                                    <hr class="hr-time">
+                                    <time>Carbon footprint training workshop in Peruvian universities<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">SEDAPAL</label>
+                                    <hr class="hr-time">
+                                    <time> Verification of carbon footprints 2012 and 2015<br>2017</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste_oscuro hoja-left text-center">
+                                    <section>
+                                        <img style="width: 55px;" src="images/tech.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM (Via PNUD)</label>
+                                    <hr class="hr-time">
+                                    <time>Web application 2050 calculator<br>2016</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Oikos Cooperacao o
+                                        Desenvolvimiento</label>
+                                    <hr class="hr-time">
+                                    <time> Organic banana carbon footprint<br>2016</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_celeste hoja-left text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">Agrícola la Venta S.A.C.</label>
+                                    <hr class="hr-time">
+                                    <time>Asparagus carbon and water footprint<br>2016</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde hoja-right text-center">
+                                    <section>
+                                        <img style="width: 70px;" src="images/huella.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">RED - ISA RED</label>
+                                    <hr class="hr-time">
+                                    <time> Corporate carbon footprint 2015<br>2016</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_verde_negro hoja-left text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/cc.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">MINAM (Via GIZ)</label>
+                                    <hr class="hr-time">
+                                    <time>Review of Peru's NDCs<br>2016</time>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="caja_naranja hoja-right text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/ee.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">
+                                        MINEM
+                                        (Via OLADE)
+                                    </label>
+                                    <hr class="hr-time">
+                                    <time>Development of the Energy Efficiency NAMA through the creation of a
+                                        Measurement, Reporting, and Verification (MRV) system proposal<br>2016</time>
+                                </div>
+                            </li>
+                            <li class="last_time_lines">
+                                <div class="caja_verde_negro hoja-left text-center">
+                                    <section>
+                                        <img style="width: 60px;" src="images/cc.png">
+                                    </section>
+                                    <label class="mt-2" style="font-size: 19px;">
+                                        Agrobanco
+                                    </label>
+                                    <hr class="hr-time">
+                                    <time>Solid Waste Management<br>2015</time>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div><!------------- ---------->
+    </div>
+    <!----------------- PIE --------------------------->
+    <iframe src="footer-en.html" width="100%" height="319" style="border: none;"></iframe>
+</body>
+<script>
+    function mostrar_noti() {
+        document.getElementById('ppnoti').style.display = 'block';
+    }
+</script>
+<script>
+    (function () {
+        'use strict';
+
+        // define variables
+        var items = document.querySelectorAll(".timeline li");
+
+        // check if an element is in viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                    var hojaRight = items[i].querySelector('div.hoja-right');
+                    if (hojaRight && !items[i].classList.contains("show-after")) {
+                        items[i].classList.add("show-after");
+                    }
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    })();
+</script>
+
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- Slider-JavaScript -->
+<script src="js/responsiveslides.min.js"></script>
+<!-- //Slider-JavaScript -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<!-- FlexSlider-JavaScript -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!-- //FlexSlider-JavaScript -->
+<!-- about-section-flexisel-slider-->
+<script type="text/javascript">
+    $(window).load(function () {
+        $("#flexiselDemo1").flexisel({
+            visibleItems: 3,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint: 480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint: 640,
+                    visibleItems: 2
+                },
+                tablet: {
+                    changePoint: 768,
+                    visibleItems: 2
+                }
+            }
+        });
+
+    });
+</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<!-- //about-section-flexisel-slider-->
+<!-- Gallery-script -->
+<script src="js/simpleLightbox.js"></script>
+<script>
+    $('.w3_agile_gallery_grid a').simpleLightbox();
+</script>
+<!-- //Gallery-script -->
+<!--<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //Bootstrap -->
+
+<!-- nueva script -->
+<!-- jarallax -->
+<script src="js/SmoothScroll.min.js"></script>
+<script src="js/jarallax.js"></script>
+<script type="text/javascript">
+    /* init Jarallax */
+    $('.jarallax').jarallax({
+        speed: 0.5,
+        imgWidth: 1366,
+        imgHeight: 768
+    })
+</script>
+<!-- //jarallax -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+<!-- nueva script -->
+<!-- General Components and Settings -->
+<script type="text/javascript" src="js/global.min.js"></script>
+<script type="text/javascript" src="js/components/header-sticky.min.js"></script>
+<script type="text/javascript" src="js/components/scrollbar.min.js"></script>
+<script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/components/swiper.min.js"></script>
+<script type="text/javascript" src="js/components/counter.min.js"></script>
+<script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
+<script type="text/javascript" src="js/components/parallax.min.js"></script>
+<script type="text/javascript" src="js/components/google-map.min.js"></script>
+<script type="text/javascript" src="js/components/wow.min.js"></script>
+<!-- menu2 -->
+<script>
+    function collapseMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<script>
+    function showdiv(myobtvis, mybtnvis) {
+        document.getElementById("divmision").style.display = "none";
+        document.getElementById("divvision").style.display = "none";
+        document.getElementById("divvalores").style.display = "none";
+        document.getElementById("btndivmision").style.background = "#96c238";
+        document.getElementById("btndivvision").style.background = "#96c238";
+        document.getElementById("btndivvalores").style.background = "#96c238";
+        document.getElementById(mybtnvis).style.background = "#607C29";
+        document.getElementById(myobtvis).style.display = "block";
+    }
+</script>
+<script>
+    function redictLanguage() {
+        window.location.href = "pag_proy.html";
+    }
+</script>
+
+</html>
